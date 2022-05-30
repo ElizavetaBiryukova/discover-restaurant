@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Website for finding restaurants</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      expice
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#">
+              Menu One
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Menu Two
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Menu Three
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Menu Four
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__list user-list">
+          <a class="user-list__login" href="login.html">
+            Войти
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Expice - website for finding restaurants</h1>
+
+    <section class="slider">
+      <h2 class="visually-hidden">Restaurant search</h2>
+      <h3 class="slider__tittle search-restaurant">Discover Restaurant & Delicious Food</h3>
+      <div class="search-restaurant__wrapper">
+        <form class="search-restaurant__search-line">
+          <input type="text" placeholder="Search Restaurant Food">
+          <button type="submit"></button>
+        </form>
+      </div>
+      <div class="search-restaurant__location">Rajshahi</div>
+    </section>
+
+    <section class="top-restaurant">
+      <h2 class="visually-hidden">Top restaurants</h2>
+      <h3 сlass="top-restaurant__title">Some top restaurant for dining in our take away</h3>
+      <p class="top-restaurant__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Est, adipiscing cursus auctor eget sed phasellus senectus.
+        Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt.
+        Volutpat metus id amet, nam hac magna accumsan.
+        Nascetur ac tortor purus ultrices morbi tellus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Est, adipiscing cursus auctor eget sed.
+      </p>
+
+      <ul class="top-restaurant__list">
+        <li class="top-restaurant__item">
+          <a href="#">
+            <img src="https://via.placeholder.com/494x494" width="494" height="494" alt="Restaurant Fire Water">
+          </a>
+          <div class="top-restaurant__popup">
+            <a aria-label="Restaurant Fire Water" href="">
+              <h3 class="top-restaurant__title">Fire Water</h3>
+            </a>
+            <p class="top-restaurant__text">We are all about we are all about to the fullest and all content dining out
+              or in! Dining out or in!</p>
+            <p class="top-restaurant__description">New market</p>
+            <a class="top-restaurant__button" href="" aria-label="Book now">Book now</a>
+          </div>
+        </li>
+
+        <li class="top-restaurant__item">
+          <a href="#">
+            <img src="https://via.placeholder.com/494x494" width="494" height="494" alt="Restaurant The Wonton">
+          </a>
+          <div class="top-restaurant__popup">
+            <a aria-label="Restaurant The Wonton" href="">
+              <h3 class="top-restaurant__title">The Wonton</h3>
+            </a>
+            <p class="top-restaurant__text">We are all about we are all about to the fullest and all content dining out
+              or in! Dining out or in!</p>
+            <p class="top-restaurant__description">Saheb bazar</p>
+            <a class="top-restaurant__button" href="" aria-label="Book now">Book now</a>
+          </div>
+        </li>
+      </ul>
+
+      <button class="top-restaurant__see-more" type="button">See more</button>
+    </section>
+  </main>
+  <footer></footer>
