@@ -11,11 +11,11 @@
     <a class="page-header__logo">
       expice
     </a>
-    <nav class="main-nav">
+    <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a href="#">
               Menu One
             </a>
@@ -53,7 +53,7 @@
       <div class="search-restaurant__wrapper">
         <form class="search-restaurant__search-line">
           <input type="text" placeholder="Search Restaurant Food">
-          <button type="submit"></button>
+          <button class="search-restaurant__button" type="submit"></button>
         </form>
       </div>
       <div class="search-restaurant__location">Rajshahi</div>
@@ -114,16 +114,13 @@
         <button type="submit">GO</button>
       </form>
       <fieldset class="advance-booking__element">
-        <label class="advance-booking__label" for="date">Date</label>
-        <input id="date" name="date" type="date" placeholder="23-09-2020">
+        <label class="advance-booking__label">Date <input name="date" type="date" placeholder="23-09-2020"></label>
       </fieldset>
       <fieldset class="advance-booking__element">
-        <label class="advance-booking__label" for="time">Time</label>
-        <input id="time" name="time" type="time" placeholder="5.00PM">
+        <label class="advance-booking__label">Time <input name="time" type="time" placeholder="5.00PM"></label>
       </fieldset>
       <fieldset class="advance-booking__element">
-        <label class="advance-booking__label" for="guests">Guests</label>
-        <input id="guests" name="guests" type="number" placeholder="3 People">
+        <label class="advance-booking__label">Guests <input name="guests" type="number" placeholder="3 People"></label>
       </fieldset>
     </section>
 
@@ -295,7 +292,7 @@
         <li class="contacts__item">
           <a class="contacts__link contacts__link--telegram" href="" aria-label="Telegram"></a>
         </li>
-        <li class="social__item">
+        <li class="contacts__item">
           <a class="contacts__link contacts__link--vk" href="" aria-label="Vkontante"></a>
         </li>
       </ul>
