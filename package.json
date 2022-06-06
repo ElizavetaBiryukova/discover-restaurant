@@ -1,0 +1,16 @@
+{
+  "name": "discover-restaurant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Личный проект по поиску рестаранов\r Категория: Landing Page\r Интерактивные элементы:\r   Валидация  Слайдер  Parallax\r Описание и небольшое ТЗ",
+  "devDependencies": {
+    "autoprefixer": "10.0.2",
+    "browser-sync": "^2.27.10"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --no-ui --files \"js/**/*.js\""
+  },
+  "engines": {
+    "node": "16.15.1"
+  }
+}
