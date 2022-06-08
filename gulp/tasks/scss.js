@@ -23,6 +23,19 @@ export const scss = () => {
         .pipe(sass({
             outputStyle: 'expanded'
         }))
+        .pipe(groupCssMediaQueries())
+        .pipe(webpcss({
+            webpClass: ".webp",
+            noWebpClass: ".no-webp"
+        }))
+        .pipe(autoprefixer({
+            grid: true,
+            overriderBrowserslist: ["last 3 versions"],
+            cascade: true
+        }))
+        //Раскомментировать если нужен не сжатый дубль файла стилей
+        .pipe(app.gulp.dest(app.path.build.css))
+        .pipe(cleanCss())
         .pipe(rename({
             extname: ".min.css"
         }))
