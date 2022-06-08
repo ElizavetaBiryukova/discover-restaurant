@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Website for finding restaurants</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -71,6 +72,10 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Est, adipiscing cursus auctor eget sed.
       </p>
+      <img src="@img/e.png" alt="">
+      @@include('html/header.html',{
+        "title":"Изображение"
+      })
 
       <ul class="top-restaurant__list">
         <li class="top-restaurant__item">
@@ -303,4 +308,5 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.min.js"></script>
 </body>

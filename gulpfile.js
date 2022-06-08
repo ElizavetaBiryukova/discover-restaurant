@@ -1,45 +1,32 @@
-import gulp from 'gulp';
-import plumber from 'gulp-plumber';
-import less from 'gulp-less';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import browser from 'browser-sync';
+//Основной модуль
+import gulp from "gulp";
+//Импорт путей
+import { path } from "./gulp/config/path.js";
+//Импорт общих плагинов
+import {plugins} from "./gulp/config/plugins.js";
 
-// Styles
-
-export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
+//Передаем значения в глобальную переменную
+global.app = {
+    path: path,
+    gulp: gulp,
+    plugins: plugins
 };
 
-// Server
+//Импорт задач
+import { copy } from "./gulp/tasks/copy.js";
+import { reset } from "./gulp/tasks/reset.js";
+import { html } from "./gulp/tasks/html.js";
 
-const server = (done) => {
-  browser.init({
-    server: {
-      baseDir: 'source'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-};
+//Наблюдатель за изменениями в файлах
+function watcher() {
+    gulp.watch(path.watch.files, copy);
+    gulp.watch(path.watch.html, html);
+}
 
-// Watcher
+const mainTasks = gulp.parallel(copy, html);
 
-const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
-};
+//Построение сценарев выполнения задач
+const dev = gulp.series(reset, mainTasks, watcher);
 
-
-export default gulp.series(
-  styles, server, watcher
-);
+//Выполнение сценария по умолчанию
+gulp.task('default', dev);
