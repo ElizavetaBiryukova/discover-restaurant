@@ -4,10 +4,11 @@
     font-size: $font-size-base;
     line-height: $line-height-base;
     color: $font-color-base;
-    background-color: $bg-color-body;
+    background-color: $bg-color-blocks
   }
   
   .page__body {
     min-height: 100%;
     margin: 0;
+    background-color: $bg-color-body;
   }
