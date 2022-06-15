@@ -1,7 +1,56 @@
 .top-restaurant__title {
-    font-size: 50px;
+    font-size: $font-size-title;
     line-height: $line-height-title;
     font-weight: 500;
-    
+    text-transform: capitalize;
 }
+
+.top-restaurant__text {
+    text-transform: capitalize;
+}
+
+.top-restaurant__item {
+    list-style-type: none;
+}
+
+.top-restaurant__popup {
+    background-color:$red;
+    opacity: 0.7;
+}
+
+.top-restaurant__popup-title {
+    color: $white;
+    font-size: $font-size-base;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.top-restaurant__link {
+    text-decoration: none;
+}
+
+.top-restaurant__popup-text {
+    text-transform: capitalize;
+    color: $white;
+}
+
+.top-restaurant__description {
+    color: $white;
+}
+
+.top-restaurant__button {
+    background-color: $white;
+    color: $red;
+    text-decoration: none;
+}
+
+.top-restaurant__see-more {
+    box-sizing: border-box;
+    background-color: $light-beige;
+    color: $red;
+    text-transform: capitalize;
+    border-color: $beige;
+    border-style: none;
+}
+
 

@@ -1,0 +1,21 @@
+.advance-booking {
+    background-color: $beige;
+}
+
+.advance-booking__wrapper {
+    background-color: $white;
+    padding: 20px;
+}
+
+.advance-booking__title {
+    text-transform: lowercase;
+    font-size: 24px;
+}
+
+.advance-booking__button {
+    box-sizing: border-box;
+    border-color: $red;
+    color: $white;
+    background-color: $red;
+    border-style: none;
+}

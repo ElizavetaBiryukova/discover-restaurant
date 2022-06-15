@@ -54,7 +54,7 @@
     <section class="slider">
       <h2 class="visually-hidden">Restaurant search</h2>
       <div class="slider__bg-images">Food</div>
-      <h3 class="slider__tittle search-restaurant">Discover Restaurant & Delicious Food</h3>
+      <h3 class="slider__title search-restaurant">Discover Restaurant & Delicious Food</h3>
       <div class="search-restaurant__wrapper">
         <form class="search-restaurant__search-line">
           <input class="search-restaurant__input type=" text" placeholder="Search Restaurant, Food">
@@ -70,7 +70,7 @@
 
     <section class="top-restaurant">
       <h2 class="visually-hidden">Top restaurants</h2>
-      <h3 сlass="top-restaurant__title">Some top restaurant for dining in our take away</h3>
+      <h3 class="top-restaurant__title">Some top restaurant for dining in our take away</h3>
       <p class="top-restaurant__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Est, adipiscing cursus auctor eget sed phasellus senectus.
@@ -87,10 +87,10 @@
             <img src="https://via.placeholder.com/320x494" width="320" height="494" alt="Restaurant Fire Water">
           </a>
           <div class="top-restaurant__popup">
-            <a aria-label="Restaurant Fire Water" href="">
-              <h3 class="top-restaurant__title">Fire Water</h3>
+            <a class="top-restaurant__link" aria-label="Restaurant Fire Water" href="">
+              <h3 class="top-restaurant__popup-title">Fire Water</h3>
             </a>
-            <p class="top-restaurant__text">We are all about we are all about to the fullest and all content dining out
+            <p class="top-restaurant__popup-text">We are all about we are all about to the fullest and all content dining out
               or in! Dining out or in!</p>
             <p class="top-restaurant__description">New market</p>
             <a class="top-restaurant__button" href="" aria-label="Book now">Book now</a>
@@ -102,10 +102,10 @@
             <img src="https://via.placeholder.com/320x494" width="320" height="494" alt="Restaurant The Wonton">
           </a>
           <div class="top-restaurant__popup">
-            <a aria-label="Restaurant The Wonton" href="">
-              <h3 class="top-restaurant__title">The Wonton</h3>
+            <a class="top-restaurant__link" aria-label="Restaurant The Wonton" href="">
+              <h3 class="top-restaurant__popup-title">The Wonton</h3>
             </a>
-            <p class="top-restaurant__text">We are all about we are all about to the fullest and all content dining out
+            <p class="top-restaurant__popup-text">We are all about we are all about to the fullest and all content dining out
               or in! Dining out or in!</p>
             <p class="top-restaurant__description">Saheb bazar</p>
             <a class="top-restaurant__button" href="" aria-label="Book now">Book now</a>
@@ -117,10 +117,11 @@
     </section>
 
     <section class="advance-booking">
-      <h2>Advance booking</h2>
+      <h2 class="advance-booking__title">Advance booking</h2>
+      <div class="advance-booking__wrapper">
       <form class="advance-booking__search-line">
-        <input type="text" placeholder="search restaurant">
-        <button type="submit">GO</button>
+        <input class="advance-booking__search-input" type="text" placeholder="search restaurant">
+        <button class="advance-booking__button" type="submit">GO</button>
       </form>
       <fieldset class="advance-booking__element">
         <label class="advance-booking__label">Date <input name="date" type="date" placeholder="23-09-2020"></label>
@@ -131,6 +132,7 @@
       <fieldset class="advance-booking__element">
         <label class="advance-booking__label">Guests <input name="guests" type="number" placeholder="3 People"></label>
       </fieldset>
+      </div>
     </section>
 
     <section class="services">
