@@ -2,6 +2,7 @@
     width: 100%;
     height: 90px;
     margin: 10px;
+    box-sizing: border-box;
 }
 
 .search-restaurant__input::placeholder {
@@ -17,4 +18,15 @@
     color: $white;
     box-sizing: border-box;
     border: 2px solid $red;
+}
+
+.search-restaurant__location {
+    background-color: $red;
+    font-size: 30px;
+    line-height: 90px;
+    font-weight: 600;
+    color: $white;
+    box-sizing: border-box;
+    border: 2px solid $red;
+    width: 280px;
 }

@@ -43,7 +43,7 @@ export const scss = () => {
             cascade: true
         })))
         //Раскомментировать если нужен не сжатый дубль файла стилей
-        .pipe(app.gulp.dest(app.path.build.css))
+        // .pipe(app.gulp.dest(app.path.build.css))
         .pipe(
             app.plugins.if(
                 app.isBuild,
