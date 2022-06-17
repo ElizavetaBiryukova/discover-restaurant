@@ -9,6 +9,10 @@
     color: $gray;
 }
 
+.services__list {
+    padding: 0;
+}
+
 .services__item {
     list-style-type: none;
 }
@@ -31,6 +35,6 @@
 }
 
 .services__wrapper-img--big {
-    width: 360px;
+    width: 320px;
     height: 550px;
 }
