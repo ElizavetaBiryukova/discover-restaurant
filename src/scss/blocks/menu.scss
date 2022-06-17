@@ -1,0 +1,39 @@
+.menu__title {
+    font-size: $font-size-title;
+    line-height: 62px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.menu__text {
+    text-transform: capitalize;
+    color: $gray;
+}
+
+.menu__item {
+    list-style-type:none;
+}
+
+.menu__popup {
+    background-color: $white;
+}
+
+.menu__popup-link {
+    text-decoration: none;
+}
+
+.menu__popup-title {
+    font-size: 24px;
+}
+
+.menu__price {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: $red;
+}
+
+.menu__popup-text {
+    color: $gray;
+    text-transform: capitalize;
+}
