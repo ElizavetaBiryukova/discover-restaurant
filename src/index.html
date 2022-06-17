@@ -90,7 +90,8 @@
             <a class="top-restaurant__link" aria-label="Restaurant Fire Water" href="">
               <h3 class="top-restaurant__popup-title">Fire Water</h3>
             </a>
-            <p class="top-restaurant__popup-text">We are all about we are all about to the fullest and all content dining out
+            <p class="top-restaurant__popup-text">We are all about we are all about to the fullest and all content
+              dining out
               or in! Dining out or in!</p>
             <p class="top-restaurant__description">New market</p>
             <a class="top-restaurant__button" href="" aria-label="Book now">Book now</a>
@@ -105,7 +106,8 @@
             <a class="top-restaurant__link" aria-label="Restaurant The Wonton" href="">
               <h3 class="top-restaurant__popup-title">The Wonton</h3>
             </a>
-            <p class="top-restaurant__popup-text">We are all about we are all about to the fullest and all content dining out
+            <p class="top-restaurant__popup-text">We are all about we are all about to the fullest and all content
+              dining out
               or in! Dining out or in!</p>
             <p class="top-restaurant__description">Saheb bazar</p>
             <a class="top-restaurant__button" href="" aria-label="Book now">Book now</a>
@@ -119,19 +121,22 @@
     <section class="advance-booking">
       <h2 class="advance-booking__title">Advance booking</h2>
       <div class="advance-booking__wrapper">
-      <form class="advance-booking__search-line">
-        <input class="advance-booking__search-input" type="text" placeholder="search restaurant">
-        <button class="advance-booking__button" type="submit">GO</button>
-      </form>
-      <fieldset class="advance-booking__element">
-        <label class="advance-booking__label">Date <input name="date" type="date" placeholder="23-09-2020"></label>
-      </fieldset>
-      <fieldset class="advance-booking__element">
-        <label class="advance-booking__label">Time <input name="time" type="time" placeholder="5.00PM"></label>
-      </fieldset>
-      <fieldset class="advance-booking__element">
-        <label class="advance-booking__label">Guests <input name="guests" type="number" placeholder="3 People"></label>
-      </fieldset>
+        <form class="advance-booking__search-line">
+          <input class="advance-booking__search-input" type="text" placeholder="search restaurant">
+          <button class="advance-booking__button" type="submit">GO</button>
+        </form>
+        <fieldset class="advance-booking__element">
+          <label class="advance-booking__label">Date <input class="advance-booking__input" name="date" type="date"
+              placeholder="23-09-2020"></label>
+        </fieldset>
+        <fieldset class="advance-booking__element">
+          <label class="advance-booking__label">Time <input class="advance-booking__input" name="time" type="time"
+              placeholder="5.00PM"></label>
+        </fieldset>
+        <fieldset class="advance-booking__element">
+          <label class="advance-booking__label">Guests <input class="advance-booking__input" name="guests" type="number"
+              placeholder="3 People"></label>
+        </fieldset>
       </div>
     </section>
 
@@ -145,28 +150,34 @@
       <ul class="services__list">
         <li class="services__item">
           <a href="#">
-            <img src="https://via.placeholder.com/271x275" width="271" height="275">
+            <div class="services__wrapper-img">
+              <img src="https://via.placeholder.com/112x112" width="112" height="112">
+            </div>
           </a>
-          <a href="">
-            <h3 class="services__title">Advanced table booking</h3>
-          </a>
-          <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </li>
-        <li class="services__item">
-          <a href="#">
-            <img src="https://via.placeholder.com/271x275" width="271" height="275">
-          </a>
-          <a href="">
-            <h3 class="services__title">Food for free</h3>
+          <a class="services__name-link" href="">
+            <h3 class="services__name">Advanced table booking</h3>
           </a>
           <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </li>
         <li class="services__item">
           <a href="#">
-            <img src="https://via.placeholder.com/271x275" width="271" height="275">
+            <div class="services__wrapper-img">
+              <img src="https://via.placeholder.com/112x112" width="112" height="112">
+            </div>
           </a>
-          <a href="">
-            <h3 class="services__title">Free home delivery at your door steps</h3>
+          <a class="services__name-link" href="">
+            <h3 class="services__name">Food for free</h3>
+          </a>
+          <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </li>
+        <li class="services__item">
+          <a href="#">
+            <div class="services__wrapper-img services__wrapper-img--big">
+              <img src="https://via.placeholder.com/112x112" width="112" height="112">
+            </div>
+          </a>
+          <a class="services__name-link" href="">
+            <h3 class="services__name">Free home delivery at your door steps</h3>
           </a>
           <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </li>
