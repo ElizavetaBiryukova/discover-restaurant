@@ -25,7 +25,7 @@
 .search-restaurant__button {
     background-color: $red;
     font-size: 30px;
-    line-height: 90px;
+    line-height: 76px;
     font-weight: 600;
     color: $white;
     box-sizing: border-box;
@@ -38,10 +38,26 @@
 .search-restaurant__location {
     background-color: $red;
     font-size: 30px;
-    line-height: 90px;
-    font-weight: 600;
+    line-height: 65px;
+    font-weight: 500;
     color: $white;
     box-sizing: border-box;
     border: 2px solid $red;
     width: 280px;
+    height: 65px;
+    border-radius: 0 100px 100px 0;
+    padding-left: 86px;
+}
+
+.search-restaurant__delishes {
+    margin-left: 46px;
+}
+
+.search-restaurant__lettuce {
+    margin-left: 246px;
+    margin-bottom: -378px;
+}
+
+.search-restaurant__picture {
+    background:repeat, radial-gradient(circle closest-side at 25% 75%, $light-gray 50%, $light-beige); 
 }
