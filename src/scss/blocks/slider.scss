@@ -1,5 +1,8 @@
 .slider {
-    padding-top: 45px;
+    width: 100%;
+    padding-top: 67px;
+    background: linear-gradient(to right,
+    $light-beige 75%, $red 25%);
 }
 
 .slider__bg-images {

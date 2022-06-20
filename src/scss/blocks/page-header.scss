@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 22px 0px 22px;
+    background: linear-gradient(to right,
+    $light-beige 75%, $red 25%);
 }
 
 .page-header__logo {

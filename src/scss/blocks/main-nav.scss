@@ -10,3 +10,20 @@
 .main-nav__wrapper {
     display: none;
 }
+
+.main-nav__toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-nav_bar {
+    width: 22.54px;
+    height: 3.12px;
+    background-color: $white;
+    margin: 3px 0;
+}
+
+.main-nav_bar--3 {
+    width: 15.49px;
+}

@@ -23,7 +23,8 @@ export const path = {
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
         svgicons: `${srcFolder}/svgicons/*.svg`,
-        normalize: `${srcFolder}/normalize.css`
+        normalize: `${srcFolder}/normalize.css`,
+        fontStyle: `${srcFolder}/scss/global/fonts.scss`
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`,

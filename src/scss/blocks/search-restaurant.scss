@@ -1,15 +1,25 @@
 .search-restaurant__input {
-    height: 320px;
     height: 90px;
-    margin: 10px 70px 10px 22px;
+    margin: 10px -160px 10px 22px;
     box-sizing: border-box;
     border: none;
-    
+    width: 250px;
+
+    @media (min-width: $iphone-width) {
+        width: 462px;
+
+    }
 }
 
 .search-restaurant__input::placeholder {
+    padding-left: 20px;
     font-size: 18px;
     line-height: 90px;
+}
+
+.search-restaurant__search-line {
+    display: flex;
+    align-items: center;
 }
 
 .search-restaurant__button {
@@ -20,6 +30,9 @@
     color: $white;
     box-sizing: border-box;
     border: 2px solid $red;
+    width: 146px;
+    height: 72px;
+    border-radius: 60px 0 0 0;
 }
 
 .search-restaurant__location {
