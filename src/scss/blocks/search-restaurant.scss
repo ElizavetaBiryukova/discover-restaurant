@@ -59,5 +59,19 @@
 }
 
 .search-restaurant__picture {
-    background:repeat, radial-gradient(circle closest-side at 25% 75%, $light-gray 50%, $light-beige); 
+    position: relative;
+    z-index: 2;
+}
+
+.search-restaurant__gradient {
+    position: absolute;
+    z-index: 1;
+    top: 608px;
+    right: 212px;
+    width: 312px;
+    height: 470px;
+    background-image: radial-gradient($light-gray 20%, $light-beige 20%);
+    background-position: 0 0;
+    background-size: 30px 30px;
+
 }
