@@ -49,6 +49,10 @@
     padding-left: 86px;
 }
 
+.search-restaurant__images {
+display: flex;
+}
+
 .search-restaurant__delishes {
     margin-left: 46px;
 }
@@ -74,4 +78,40 @@
     background-position: 0 0;
     background-size: 30px 30px;
 
+}
+
+.search-restaurant__control {
+    position: relative;
+}
+
+.search-restaurant__btn-control {
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.search-restaurant__btn-control--back::before {
+    width: 44px;
+    height: 30px;
+    position: absolute;
+    content: "";
+    background-image: url(../../img/carousel.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: -57px;
+    right: 80px;
+}
+
+.search-restaurant__btn-control--next::before {
+    width: 44px;
+    height: 30px;
+    position: absolute;
+    content: "";
+    background-image: url(../../img/carousel.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: -57px;
+    right: 11px;
+    transform: rotate(180deg);
 }
