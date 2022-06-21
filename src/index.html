@@ -95,8 +95,10 @@
         <div class="search-restaurant__gradient"></div>
       </div>
       <div class="search-restaurant__control">
-        <button class="search-restaurant__btn-control search-restaurant__btn-control--back" type="button" aria-label="Cлайд"></button>
-        <button class="search-restaurant__btn-control search-restaurant__btn-control--next" type="button" aria-label="Cлайд"></button>
+        <button class="search-restaurant__btn-control search-restaurant__btn-control--back" type="button"
+          aria-label="Cлайд"></button>
+        <button class="search-restaurant__btn-control search-restaurant__btn-control--next" type="button"
+          aria-label="Cлайд"></button>
       </div>
     </section>
 
@@ -115,9 +117,14 @@
 
       <ul class="top-restaurant__list">
         <li class="top-restaurant__item">
-          <a href="#">
-            <img src="https://via.placeholder.com/320x494" width="320" height="494" alt="Restaurant Fire Water">
-          </a>
+          <div class="top-restaurant__img-wrapper">
+            <a href="#">
+              <picture>
+                <img class="top-restaurant__img" src="img/fire-water.png" alt="Restaurant Fire Water"
+                  srcset="img/fire-water@2x.png 2x">
+              </picture>
+            </a>
+          </div>
           <div class="top-restaurant__popup">
             <a class="top-restaurant__link" aria-label="Restaurant Fire Water" href="">
               <h3 class="top-restaurant__popup-title">Fire Water</h3>
@@ -131,9 +138,12 @@
         </li>
 
         <li class="top-restaurant__item">
-          <a href="#">
-            <img src="https://via.placeholder.com/320x494" width="320" height="494" alt="Restaurant The Wonton">
-          </a>
+          <div class="top-restaurant__img-wrapper">
+            <a href="#">
+              <img class="top-restaurant__img" src="img/thewonton.png" alt="Restaurant The Wonton"
+                srcset="img/thewonton@2x.png 2x">
+            </a>
+          </div>
           <div class="top-restaurant__popup">
             <a class="top-restaurant__link" aria-label="Restaurant The Wonton" href="">
               <h3 class="top-restaurant__popup-title">The Wonton</h3>
