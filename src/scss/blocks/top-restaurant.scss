@@ -19,10 +19,39 @@
 .top-restaurant__text {
     text-transform: capitalize;
     margin-left: 83px;
+    margin-bottom: 56px;
 }
 
 .top-restaurant__list {
-    padding-left: 57px;
+    position: relative;
+    padding-left: 43px;
+    z-index: 1;
+}
+
+.top-restaurant__list::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-image: radial-gradient($light-gray 25%, $light-beige 10%);
+    background-position: 0 0;
+    background-size: 30px 30px;
+    top: -29px;
+    left: 16px;
+    z-index: -1;
+}
+
+.top-restaurant__list::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient($light-gray 25%, $light-beige 10%);
+    background-position: 0 0;
+    background-size: 30px 30px;
+    top: 770px;
+    left: 254px;
+    z-index: -1;
 }
 
 .top-restaurant__item {
@@ -93,11 +122,40 @@
 }
 
 .top-restaurant__see-more {
-    box-sizing: border-box;
-    background-color: $light-beige;
-    color: $red;
-    text-transform: capitalize;
-    border-color: $beige;
+    position: relative;
+    background-color: $red;
     border-style: none;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 45%;
 }
+
+.top-restaurant__see-more::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 3px;
+    background-color: $red;
+    top: 20px;
+    right:39px;
+}
+
+.top-restaurant__see-more::before {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 34px;
+    background: no-repeat url(../../img/chevron.svg);
+    top: 14px;
+    right: -49px;
+}
+
+.top-restaurant__see-more-text {
+    text-transform: capitalize;
+    color: $red;
+    margin-left: 45%;
+}
+
 
