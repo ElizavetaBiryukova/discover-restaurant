@@ -37,9 +37,9 @@
 }
 
 .top-restaurant__popup {
+    display: flex;
     height: 195px;
-    background-color:$red;
-    opacity: 0.7;
+    background-color: rgba(254,4,60, 0.8);
     width: 493px;
     border: 1px solid rgba(254,4,60, 0.8);
     box-shadow: 0px 4px 4px rgba(254,4,60, 0.8);
@@ -53,9 +53,9 @@
 
 .top-restaurant__popup-title {
     color: $white;
-    font-size: $font-size-base;
-    line-height: 24px;
+    font-size: 24px;
     font-weight: 700;
+    margin-bottom: 0px;
 }
 
 .top-restaurant__link {
@@ -69,12 +69,27 @@
 
 .top-restaurant__description {
     color: $white;
+    text-transform: capitalize;
+    margin-left: 45px;
 }
 
 .top-restaurant__button {
     background-color: $white;
     color: $red;
     text-decoration: none;
+    text-transform: capitalize;
+    border: 1px solid $white;
+    border-radius: 30px 0 0 30px;
+    padding: 11px 8px 0px 51px;
+    margin: 104px -3px 41px 18px;
+    width: 50%;
+
+}
+
+.top-restaurant__popup-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
 .top-restaurant__see-more {
