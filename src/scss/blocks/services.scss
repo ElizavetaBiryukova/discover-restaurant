@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+    margin-bottom: 150px;
 }
 
 .services__item {
@@ -47,6 +48,8 @@
 
 .services__item--big {
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .services__name {
@@ -65,9 +68,11 @@
 .services__wrapper-img--big {
     width: 100%;
     height: 550px;
+    margin-bottom: -253px;
 }
 
 .services__discription {
     text-transform: capitalize;
     color: $gray;
+    text-align: center;
 }
