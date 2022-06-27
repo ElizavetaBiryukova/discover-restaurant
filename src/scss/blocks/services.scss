@@ -57,12 +57,61 @@
     line-height: 32px;
     font-weight: 500;
     text-transform: capitalize;
+    position: relative;
 }
+
+.services__name--second {
+    text-align: right;
+    padding-right: 50px;
+}
+
+.services__name::after {
+    content: "";
+    width: 84px;
+    height: 3px;
+    background-color: $red;
+    position: absolute;
+    bottom: 12px;
+    right: 5px;
+}
+
+.services__name--second::after {
+    right: 111px;
+}
+
+.services__name--big::after {
+    bottom: -92px;
+    width: 219px;
+}
+
+.services__name::before {
+    content: "";
+    width: 73px;
+    height: 16px;
+    background-image: url(../../img/arrow.svg);
+    position: absolute;
+    bottom: 6px;
+    right: 200px;
+}
+
+.services__name--second::before {
+    right: -40px;
+    transform: rotate(180deg);
+}
+
+.services__name--big::before {
+    display: none;
+}
+
 
 .services__wrapper-img {
     background-color: $beige;
     width: 271px;
     height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .services__wrapper-img--big {
@@ -75,4 +124,8 @@
     text-transform: capitalize;
     color: $gray;
     text-align: center;
+}
+
+.services__img--big {
+    margin-bottom: 100px;
 }
