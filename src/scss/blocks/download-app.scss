@@ -1,26 +1,91 @@
 .download-app {
+    padding-top: 60px;
     background-color: $beige;
 }
 
+.download-app-wrapper {
+    margin: 0 20px 0 20px;
+}
+
 .download-app__title {
+    position: relative;
     font-size: $font-size-title;
     line-height: $line-height-title;
     font-weight: 500;
     text-transform: capitalize;
+    margin-left: 50px;
+}
+
+.download-app__title::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 100px;
+    background-color: #FE043C;
+    left: -39px;
+    top: 7px;
 }
 
 .download-app__text {
     text-transform: capitalize;
     color: $gray;
+    margin-left: 50px;
+}
+
+.download-app__buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
 .download-app__wrapper-btn {
     background-color: $black;
     width: 178px;
     height: 49px;
-}
-
-.download-app__button {
+    border: 1px solid $black;
+    box-sizing: border-box;
+    border-radius: 10px;
     text-decoration: none;
     color: $white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-left: 70px;
+    background-repeat: no-repeat;
+    background-position: 20px 5px;
+}
+
+.download-app__wrapper-btn--apply {
+    background-image: url(../../img/apple.svg);
+}
+
+.download-app__wrapper-btn--google {
+    background-image: url(../../img/google.svg);
+}
+
+.download-app__button-text {
+    font-size: 12px;
+    margin: 0;
+}
+
+.download-app__button-store {
+    text-transform: capitalize;
+    margin: -5px 0;
+}
+
+.download-app__image {
+    margin-left: 30%;
+    width: 317px;
+    position: relative;
+    z-index: 0;
+    margin-top: 30px;
+}
+
+.download-app__image::after {
+    position:absolute;
+    background-image: url(../../img/letucce4.png);
+    content: "";
+    width: 356px;
+    height: 434px;
+    left: -105px;
+    bottom: 34px;
+    z-index: -1;
+
 }
