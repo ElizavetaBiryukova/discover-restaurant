@@ -1,0 +1,16 @@
+.contacts__list {
+    list-style-type: none;
+    display: flex;
+}
+
+.contacts__item {
+    width: min-content;
+    margin-left: 10px;
+}
+
+.contacts__link {
+    text-decoration: none;
+    color: $gray;
+    font-weight: 700;
+    font-size: 20px;
+}

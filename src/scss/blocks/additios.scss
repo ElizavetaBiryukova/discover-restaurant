@@ -1,4 +1,6 @@
 .additions__list {
     list-style-type: none;
     color: $gray;
+    display: flex;
+    justify-content: space-between; 
 }
