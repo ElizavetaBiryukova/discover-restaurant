@@ -1,6 +1,6 @@
 .slider {
     width: 100%;
-    padding-top: 67px;
+    padding-top: 79px;
     background: linear-gradient(to right,
     $light-beige 75%, $red 25%);
 }
@@ -9,7 +9,6 @@
     font-size: 100px;
     font-weight: 900;
     opacity: 0.05;
-    padding-bottom: 20px;
     margin-left: 17px;
 }
 
@@ -17,5 +16,6 @@
 font-size: $font-size-title;
 line-height: 48px;
 font-weight: 700;
-margin-left: 22px;
+margin-left: 18px;
+width: 70%;
 }

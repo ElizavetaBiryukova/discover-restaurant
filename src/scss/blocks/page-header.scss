@@ -1,7 +1,7 @@
 .page-header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 22px 0px 22px;
+    padding: 18px 22px 0px 21px;
     background: linear-gradient(to right,
     $light-beige 75%, $red 25%);
 }
@@ -10,4 +10,5 @@
     color: $red;
     font-size: 48px;
     font-weight: bold;
+    padding-top: 12px;
 }

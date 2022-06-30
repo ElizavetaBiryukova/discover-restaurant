@@ -1,6 +1,6 @@
 .search-restaurant__input {
     height: 90px;
-    margin: 10px -160px 10px 22px;
+    margin: -10px -158px 7px 22px;
     box-sizing: border-box;
     border: none;
     width: 250px;
@@ -12,7 +12,7 @@
 }
 
 .search-restaurant__input::placeholder {
-    padding-left: 20px;
+    padding-left: 27px;
     font-size: 18px;
     line-height: 90px;
 }
@@ -29,10 +29,11 @@
     font-weight: 600;
     color: $white;
     box-sizing: border-box;
-    border: 2px solid $red;
+    border: 1px solid $red;
     width: 146px;
-    height: 72px;
+    height: 73px;
     border-radius: 60px 0 0 0;
+    margin-bottom: 15px;
 }
 
 .search-restaurant__location {
@@ -46,20 +47,22 @@
     width: 280px;
     height: 65px;
     border-radius: 0 100px 100px 0;
-    padding-left: 86px;
+    padding-left: 30px;
+    margin-top: 39px;
 }
 
-.search-restaurant__images {
-display: flex;
+.search-restaurant__vector {
+    padding-right: 24px;
 }
 
 .search-restaurant__delishes {
-    margin-left: 46px;
+    margin-left: 9px;
+    margin-top: -376px;
 }
 
 .search-restaurant__lettuce {
-    margin-left: 246px;
-    margin-bottom: -378px;
+    margin-left: 223px;
+    margin-top: -103px;
 }
 
 .search-restaurant__picture {
@@ -67,21 +70,18 @@ display: flex;
     z-index: 2;
 }
 
-.search-restaurant__gradient {
-    position: absolute;
-    z-index: 1;
-    top: 608px;
-    right: 212px;
-    width: 312px;
-    height: 470px;
+.search-restaurant__images {
+    width: 65%;
     background-image: radial-gradient($light-gray 20%, $light-beige 20%);
-    background-position: 0 0;
-    background-size: 30px 30px;
-
+    background-position: 0 8px;
+    background-size: 29px 28px;
+    margin-left: 29px;
 }
 
 .search-restaurant__control {
+    height: 6px;
     position: relative;
+    margin-bottom: 65px;
 }
 
 .search-restaurant__btn-control {
@@ -91,7 +91,7 @@ display: flex;
     outline: none;
 }
 
-.search-restaurant__btn-control--back::before {
+.search-restaurant__btn-control::before {
     width: 44px;
     height: 30px;
     position: absolute;
@@ -99,19 +99,12 @@ display: flex;
     background-image: url(../../img/carousel.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    top: -57px;
-    right: 80px;
+    top: -67px;
+    right: 83px;
 }
 
 .search-restaurant__btn-control--next::before {
-    width: 44px;
-    height: 30px;
-    position: absolute;
-    content: "";
-    background-image: url(../../img/carousel.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    top: -57px;
-    right: 11px;
+    top: -68px;
+    right: 22px;
     transform: rotate(180deg);
 }
