@@ -78,8 +78,8 @@
 }
 
 .services__name--big::after {
-    bottom: -78px;
-    left: 21px;
+    bottom: -79px;
+    left: 27px;
     width: 191px;
 }
 
@@ -136,4 +136,9 @@
 
 .services__name--big {
     margin-top: 4px;
+    margin-left: -10px;
+}
+
+.services__discription--big {
+    margin: 12px 0 25px 12px;
 }
