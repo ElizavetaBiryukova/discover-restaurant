@@ -28,6 +28,11 @@
     padding-left: 29px;
     z-index: 1;
     margin-bottom: 52px;
+
+    @media (max-width: $iphone-width) {
+        overflow: hidden;
+        padding-left: 0px;
+    }
 }
 
 .top-restaurant__list::after {
@@ -63,20 +68,27 @@
 
 .top-restaurant__img-wrapper {
     margin-bottom: -204px;
+
 }
 
 .top-restaurant__popup {
     display: flex;
     height: 195px;
-    background-color: rgba(254,4,60, 0.8);
+    background-color: rgba(254, 4, 60, 0.8);
     width: 493px;
-    border: 1px solid rgba(254,4,60, 0.8);
-    box-shadow: 0px 4px 4px rgba(254,4,60, 0.8);
+    border: 1px solid rgba(254, 4, 60, 0.8);
+    box-shadow: 0px 4px 4px rgba(254, 4, 60, 0.8);
     border-radius: 0px 0px 20px 20px;
+
+    @media (max-width: $iphone-width) {
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
 }
 
 .top-restaurant__popup:focus {
-    border: 1px solid #000000;
+    border: 1px solid $black;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -85,6 +97,10 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 0px;
+
+    @media (max-width: $iphone-width) {
+        margin-top: 10px;
+    }
 }
 
 .top-restaurant__link {
@@ -96,12 +112,23 @@
     color: $white;
     margin-top: 21px;
     margin-bottom: 4px;
+
+    @media (max-width: $iphone-width) {
+        font-size: 12px;
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
 }
 
 .top-restaurant__description {
     color: $white;
     text-transform: capitalize;
     margin-left: 40px;
+
+    @media (max-width: $iphone-width) {
+        margin-left: 0px;
+        margin-top: 7px;
+    }
 }
 
 .top-restaurant__button {
@@ -116,12 +143,23 @@
     margin: 131px -3px 19px 18px;
     width: 48%;
 
+    @media (max-width: $iphone-width) {
+        margin: 9px 167px 19px 18px;
+        font-size: 14px;
+        line-height: 15px;
+        border-radius: 30px;
+    }
+
 }
 
 .top-restaurant__popup-wrapper {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+
+    @media (max-width: $iphone-width) {
+        width: 59%;
+    }
 }
 
 .top-restaurant__see-more {
@@ -142,7 +180,7 @@
     height: 3px;
     background-color: $red;
     top: 20px;
-    right:39px;
+    right: 39px;
 }
 
 .top-restaurant__see-more::before {
@@ -160,5 +198,3 @@
     color: $red;
     margin: 16px 0 27px 48%;
 }
-
-

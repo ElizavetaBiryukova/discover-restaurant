@@ -9,13 +9,17 @@
 .page-footer::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 370px;
     background-image: radial-gradient($light-gray 5%, rgba(0, 0, 0, 0) 5%);
     background-size: 80px 80px;
     left: 20px;
     top: 0px;
     z-index: -1;
+
+    @media (max-width: $iphone-width) {
+        display: none;
+    }
 }
 
 .page-footer__wrapper {
@@ -89,6 +93,10 @@
     display: flex;
     flex-wrap: nowrap;
     margin: 0px 23px 18px 28px;
+
+    @media (max-width: $iphone-width) {
+        margin: 0px -30px 18px -27px;
+    }
 }
 
 .page-footer__wrapper-contacts {

@@ -71,6 +71,10 @@
     position: absolute;
     bottom: 12px;
     right: 5px;
+
+    @media (max-width: $iphone-width) {
+        display: none;
+    }
 }
 
 .services__name--second::after {
@@ -91,11 +95,16 @@
     position: absolute;
     bottom: 6px;
     right: 212px;
+
+    @media (max-width: $iphone-width) {
+        display: none;
+    }
 }
 
 .services__name--second::before {
     right: -64px;
     transform: rotate(180deg);
+
 }
 
 .services__name--big::before {
@@ -132,6 +141,9 @@
 .services__name-wrapper {
     display: flex;
     flex-direction: column;
+    @media (max-width: $iphone-width) {
+        margin-left: 2px;
+     }
 }
 
 .services__name--big {

@@ -3,11 +3,12 @@
     margin: -10px -158px 7px 22px;
     box-sizing: border-box;
     border: none;
-    width: 250px;
+    width: 462px;
 
-    @media (min-width: $iphone-width) {
-        width: 462px;
-
+    @media (max-width: $iphone-width) {
+        width: 70%;
+        height: 62px;
+        margin: -10px -47px 7px 3px;
     }
 }
 
@@ -15,6 +16,10 @@
     padding-left: 27px;
     font-size: 18px;
     line-height: 90px;
+
+    @media (max-width: $iphone-width) {
+        font-size: 12px;
+    }
 }
 
 .search-restaurant__search-line {
@@ -34,6 +39,15 @@
     height: 73px;
     border-radius: 60px 0 0 0;
     margin-bottom: 15px;
+
+    @media (max-width: $iphone-width) {
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 39px;
+        padding: 5px 0px 10px 0px;
+    }
 }
 
 .search-restaurant__location {
@@ -58,11 +72,20 @@
 .search-restaurant__delishes {
     margin-left: 9px;
     margin-top: -376px;
+
+    @media (max-width: $iphone-width) {
+        margin-left: -213px;
+        margin-top: -376px;
+    }
 }
 
 .search-restaurant__lettuce {
     margin-left: 223px;
     margin-top: -103px;
+
+    @media (max-width: $iphone-width) {
+        margin-left: -15px;
+    }
 }
 
 .search-restaurant__picture {
@@ -101,10 +124,19 @@
     background-position: 50% 50%;
     top: -67px;
     right: 83px;
+
+    @media (max-width: $iphone-width) {
+        top: -30px;
+        right: 33px;
+    }
 }
 
 .search-restaurant__btn-control--next::before {
     top: -68px;
     right: 22px;
     transform: rotate(180deg);
+    @media (max-width: $iphone-width) {
+        top: -86px;
+        right: 32px;
+    }
 }
