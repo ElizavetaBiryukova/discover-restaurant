@@ -11,4 +11,8 @@
     font-size: 48px;
     font-weight: bold;
     padding-top: 12px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 60px;
+    }
 }

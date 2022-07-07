@@ -4,6 +4,11 @@
     font-weight: 500;
     position: relative;
     margin: 82px 0 5px 52px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 48px;
+        margin: 10px 0 5px 52px;
+    }
 }
 
 .services__title::before {
@@ -28,6 +33,15 @@
     display: flex;
     flex-direction: column;
     margin: -7px 20px 78px -23px;
+    align-items: center;
+
+    @media (max-width: $iphone-width) {
+        display: block;
+    }
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+    }
 }
 
 .services__item {
@@ -94,7 +108,7 @@
     background-image: url(../../img/arrow.svg);
     position: absolute;
     bottom: 6px;
-    right: 212px;
+    right: 202px;
 
     @media (max-width: $iphone-width) {
         display: none;
@@ -141,9 +155,10 @@
 .services__name-wrapper {
     display: flex;
     flex-direction: column;
+
     @media (max-width: $iphone-width) {
         margin-left: 2px;
-     }
+    }
 }
 
 .services__name--big {
@@ -153,4 +168,13 @@
 
 .services__discription--big {
     margin: 12px 0 25px 12px;
+}
+
+@media (min-width: $tablet-width) {
+    .services__tittle-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
 }

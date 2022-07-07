@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @media (max-width: $iphone-width) {
         padding: 52px 0px 29px 0px;
     }
@@ -55,6 +56,10 @@
     font-size: 24px;
     margin-top: 0px;
     margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 36px;
+    }
 }
 
 .advance-booking__title::after {
@@ -66,6 +71,11 @@
     bottom: 45px;
     right: 33px;
     top: -33px;
+
+    @media (min-width: $tablet-width) {
+        width: 230px;
+        height: 15px;
+    }
 }
 
 .advance-booking__button {
@@ -78,11 +88,18 @@
     padding: 7px 22px;
     margin-top: 7px;
     margin-left: -73px;
+
+    @media (min-width: $tablet-width) {
+        margin-left: -126px;
+        font-size: 30px;
+        padding: 14px 34px;
+    }
 }
 
 .advance-booking__element {
     border: none;
     margin-left: 27px;
+
     @media (max-width: $iphone-width) {
         margin-left: 0px;
     }
@@ -97,6 +114,11 @@
     box-shadow: 0 0 30px $beige;
     height: 51px;
     width: 273px;
+
+    @media (min-width: $tablet-width) {
+        width: 554px;
+        height: 90px;
+    }
 }
 
 .advance-booking__search-input::placeholder {
@@ -109,6 +131,11 @@
     margin-top: 55px;
     display: grid;
     grid-template-columns: repeat(3, 100px);
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        grid-gap: 70px;
+    }
 }
 
 .advance-booking__label {

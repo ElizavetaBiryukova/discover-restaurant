@@ -2,7 +2,12 @@
     width: 100%;
     padding-top: 79px;
     background: linear-gradient(to right,
-    $light-beige 75%, $red 25%);
+            $light-beige 75%, $red 25%);
+
+            @media (min-width: $tablet-width) {
+                padding-top: 170px;
+                padding-bottom: 100px;
+            }
 }
 
 .slider__bg-images {
@@ -10,12 +15,22 @@
     font-weight: 900;
     opacity: 0.05;
     margin-left: 17px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 150px;
+    }
 }
 
 .slider__title {
-font-size: $font-size-title;
-line-height: 48px;
-font-weight: 700;
-margin-left: 18px;
-width: 70%;
+    font-size: $font-size-title;
+    line-height: 48px;
+    font-weight: 700;
+    margin-left: 18px;
+    width: 70%;
+
+    @media (min-width: $tablet-width) {
+        font-size: 60px;
+        line-height: 70px;
+        width: 55%;
+    }
 }

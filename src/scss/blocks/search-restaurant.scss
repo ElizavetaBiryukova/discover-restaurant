@@ -63,6 +63,10 @@
     border-radius: 0 100px 100px 0;
     padding-left: 30px;
     margin-top: 39px;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 100px;
+    }
 }
 
 .search-restaurant__vector {
@@ -99,6 +103,12 @@
     background-position: 0 8px;
     background-size: 29px 28px;
     margin-left: 29px;
+
+    @media (min-width: $tablet-width) {
+        width: 19%;
+        margin-left: 627px;
+        margin-top: -565px;
+    }
 }
 
 .search-restaurant__control {
@@ -135,6 +145,7 @@
     top: -68px;
     right: 22px;
     transform: rotate(180deg);
+
     @media (max-width: $iphone-width) {
         top: -86px;
         right: 32px;

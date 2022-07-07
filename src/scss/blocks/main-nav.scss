@@ -22,8 +22,16 @@
     height: 3.12px;
     background-color: $white;
     margin: 4px 0;
+
+    @media (min-width: $tablet-width) {
+        width: 40px;
+    }
 }
 
 .main-nav_bar--3 {
     width: 13.49px;
+
+    @media (min-width: $tablet-width) {
+        width: 27.5px;
+    }
 }

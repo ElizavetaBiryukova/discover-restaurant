@@ -35,6 +35,7 @@
 
 .menu__item {
     list-style-type: none;
+    max-width: 514px;
     @media (max-width: $iphone-width) {
         overflow: hidden;
     }

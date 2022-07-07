@@ -1,5 +1,6 @@
 .download-app {
     padding-top: 28px;
+    padding-bottom: 65px;
     background-color: $beige;
 }
 
@@ -16,7 +17,7 @@
     height: 525px;
     background-image: radial-gradient($light-gray 5%, $beige 5%);
     background-size: 80px 80px;
-    top: 313px;
+    top: 280px;
     z-index: 1;
 
     @media (max-width: $iphone-width) {
@@ -53,7 +54,7 @@
 
 .download-app__buttons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .download-app__wrapper-btn {
@@ -104,7 +105,7 @@
 }
 
 .download-app__image {
-    margin-left: 100px;
+    margin: auto;
     width: 317px;
     position: relative;
     z-index: 3;

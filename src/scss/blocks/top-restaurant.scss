@@ -6,6 +6,10 @@
     margin-left: 52px;
     margin-bottom: -3px;
     position: relative;
+
+    @media (min-width: $tablet-width) {
+        font-size: 48px;
+    }
 }
 
 .top-restaurant__title::before {
@@ -24,14 +28,23 @@
 }
 
 .top-restaurant__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    padding-left: 29px;
     z-index: 1;
     margin-bottom: 52px;
 
     @media (max-width: $iphone-width) {
         overflow: hidden;
         padding-left: 0px;
+        display: block;
+    }
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        padding-left: 0px;
+        margin-top: 50px;
     }
 }
 
@@ -45,6 +58,11 @@
     top: -30px;
     left: -2px;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+        top: -80px;
+        height: 77px;
+    }
 }
 
 .top-restaurant__list::before {
@@ -57,6 +75,11 @@
     top: 621px;
     left: 217px;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+        top: 158px;
+        left: 758px;
+    }
 }
 
 .top-restaurant__item {
@@ -64,6 +87,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+        margin-right: 30px;
+    }
 }
 
 .top-restaurant__img-wrapper {
@@ -171,6 +198,11 @@
     height: 40px;
     border-radius: 50%;
     margin-left: 49%;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 219px;
+
+    }
 }
 
 .top-restaurant__see-more::after {
@@ -197,4 +229,28 @@
     text-transform: capitalize;
     color: $red;
     margin: 16px 0 27px 48%;
+
+    @media (min-width: $tablet-width) {
+        grid-column-start: 2;
+        margin-top: -353px;
+
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .top-restaurant__title-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1.3fr;
+        margin-top: 50px;
+    }
+
+    .top-restaurant__list-wrapper {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .top-restaurant {
+        margin-bottom: 100px;
+    }
+
 }
