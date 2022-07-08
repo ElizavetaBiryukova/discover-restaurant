@@ -40,7 +40,9 @@
     }
 
     @media (min-width: $tablet-width) {
-        flex-direction: row;
+        flex-wrap: wrap;
+        height: 650px;
+        margin: 10px 52px 78px 57px;
     }
 }
 
@@ -56,11 +58,16 @@
 
 .services__item--second {
     flex-direction: row-reverse;
+
 }
 
 .services__item--big {
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 23px;
+    }
 }
 
 .services__name {
@@ -140,6 +147,10 @@
     width: 89%;
     height: 548px;
     margin-bottom: -253px;
+
+    @media (min-width: $tablet-width) {
+        height: 589px;
+    }
 }
 
 .services__discription {

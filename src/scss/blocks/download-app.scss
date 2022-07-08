@@ -4,13 +4,26 @@
     background-color: $beige;
 }
 
-.download-app-wrapper {
+.download-app__wrapper {
     margin: 0 20px 0 20px;
     position: relative;
 
+    @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-areas:
+            ". image"
+            "title image"
+            "text image"
+            "buttons image"
+            ". image";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 50px;
+    }
+
 }
 
-.download-app-wrapper::after {
+.download-app__wrapper::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -23,6 +36,13 @@
     @media (max-width: $iphone-width) {
         display: none;
     }
+
+    @media (min-width: $tablet-width) {
+        width: 40%;
+        right: 203px;
+        background-size: 94px 99px;
+        top: 168px;
+    }
 }
 
 .download-app__title {
@@ -32,6 +52,12 @@
     font-weight: 500;
     text-transform: capitalize;
     margin: 29px 35px 21px 33px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 48px;
+        grid-area: title;
+        z-index: 3;
+    }
 }
 
 .download-app__title::before {
@@ -39,7 +65,7 @@
     content: "";
     width: 12px;
     height: 100px;
-    background-color: #FE043C;
+    background-color: $red;
     left: -33px;
     top: -3px;
 }
@@ -50,11 +76,23 @@
     margin-left: 30px;
     margin-bottom: 30px;
 
+    @media (min-width: $tablet-width) {
+        grid-area: text;
+        margin: 0px;
+        z-index: 3;
+        margin: 20px 40px;
+    }
 }
 
 .download-app__buttons {
     display: flex;
     justify-content: center;
+
+    @media (min-width: $tablet-width) {
+        grid-area: buttons;
+        z-index: 3;
+        justify-content: flex-start;
+    }
 }
 
 .download-app__wrapper-btn {
@@ -111,6 +149,12 @@
     z-index: 3;
     margin-top: 27px;
 
+    @media (min-width: $tablet-width) {
+        grid-area: image;
+        margin: 0px;
+
+    }
+
     @media (max-width: $iphone-width) {
         display: none;
     }
@@ -125,5 +169,12 @@
     left: -120px;
     bottom: 63px;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+        background-image: url(../../img/letucce4-tablet.png);
+        height: 500px;
+        left: -169px;
+        bottom: 228px;
+    }
 
 }

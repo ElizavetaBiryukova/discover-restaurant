@@ -16,26 +16,40 @@
     @media (max-width: $iphone-width) {
         text-align: center;
     }
+
+    @media (min-width: $tablet-width) {
+        font-size: 48px;
+    }
 }
 
 .menu__text {
     text-transform: capitalize;
     color: $gray;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+        margin: 0px 265px 60px;
+    }
 }
 
 .menu__list {
     padding: 0px 0px 27px;
     display: grid;
     grid-gap: 32px;
+
     @media (max-width: $iphone-width) {
         overflow: hidden;
+    }
+
+    @media (min-width: $tablet-width) {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 .menu__item {
     list-style-type: none;
     max-width: 514px;
+
     @media (max-width: $iphone-width) {
         overflow: hidden;
     }

@@ -5,7 +5,7 @@
             $light-beige 75%, $red 25%);
 
             @media (min-width: $tablet-width) {
-                padding-top: 170px;
+                padding-top: 143px;
                 padding-bottom: 100px;
             }
 }
@@ -18,6 +18,7 @@
 
     @media (min-width: $tablet-width) {
         font-size: 150px;
+        margin-left: 21px;
     }
 }
 
@@ -32,5 +33,6 @@
         font-size: 60px;
         line-height: 70px;
         width: 55%;
+        margin: 49px 0px 49px 27px;
     }
 }

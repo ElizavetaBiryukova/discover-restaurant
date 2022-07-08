@@ -10,6 +10,11 @@
         height: 62px;
         margin: -10px -47px 7px 3px;
     }
+
+    @media (min-width: $tablet-width) {
+        margin-left: 35px;
+
+    }
 }
 
 .search-restaurant__input::placeholder {
@@ -65,7 +70,7 @@
     margin-top: 39px;
 
     @media (min-width: $tablet-width) {
-        margin-top: 100px;
+        margin-top: 89px;
     }
 }
 
