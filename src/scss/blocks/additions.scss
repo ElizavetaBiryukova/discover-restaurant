@@ -9,6 +9,10 @@
         margin-left: -71px;
         margin-right: -52px;
     }
+
+    @media (min-width: $tablet-width) {
+        margin-top: 39px;
+    }
 }
 
 .additions__item {

@@ -9,6 +9,8 @@
 
     @media (min-width: $tablet-width) {
         font-size: 48px;
+        margin-left: 89px;
+        line-height: 57px;
     }
 }
 
@@ -20,11 +22,22 @@
     background-color: $red;
     left: -32px;
     top: -5px;
+
+    @media (min-width: $tablet-width) {
+        width: 23px;
+        height: 138px;
+        left: -56px;
+        top: -13px;
+    }
 }
 
 .top-restaurant__text {
     text-transform: capitalize;
     margin: 14px 33px 46px 52px;
+
+    @media (min-width: $tablet-width) {
+        margin: 52px 33px 19px 71px;
+    }
 }
 
 .top-restaurant__list {
@@ -60,8 +73,8 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-        top: -80px;
-        height: 77px;
+        top: -84px;
+        height: 70px;
     }
 }
 
@@ -77,8 +90,8 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-        top: 158px;
-        left: 758px;
+        top: 163px;
+        left: 745px;
     }
 }
 
@@ -89,7 +102,7 @@
     margin-bottom: 30px;
 
     @media (min-width: $tablet-width) {
-        margin-right: 30px;
+        margin-right: 15px;
     }
 }
 
@@ -200,7 +213,7 @@
     margin-left: 49%;
 
     @media (min-width: $tablet-width) {
-        margin-top: 219px;
+        margin-top: 259px;
 
     }
 }
@@ -232,8 +245,8 @@
 
     @media (min-width: $tablet-width) {
         grid-column-start: 2;
-        margin-top: -353px;
-
+        margin-top: -310px;
+        margin-left: 45%;
     }
 }
 
@@ -241,7 +254,7 @@
     .top-restaurant__title-wrapper {
         display: grid;
         grid-template-columns: 2fr 1.3fr;
-        margin-top: 50px;
+        margin-top: 16px;
     }
 
     .top-restaurant__list-wrapper {
@@ -250,7 +263,7 @@
     }
 
     .top-restaurant {
-        margin-bottom: 100px;
+        margin-bottom: 47px;
     }
 
 }

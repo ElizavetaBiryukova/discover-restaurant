@@ -7,7 +7,7 @@
 
     @media (min-width: $tablet-width) {
         font-size: 48px;
-        margin: 10px 0 5px 52px;
+        margin: 10px 0 5px 87px;
     }
 }
 
@@ -18,13 +18,25 @@
     height: 100px;
     background-color: $red;
     left: -31px;
-    top: -20px
+    top: -20px;
+
+    @media (min-width: $tablet-width) {
+        width: 24px;
+        height: 142px;
+        left: -55px;
+        top: -37px;
+    }
 }
 
 .services__text {
     text-transform: capitalize;
     color: $gray;
     margin: 0 12px 10px 53px;
+
+    @media (min-width: $tablet-width) {
+        margin: 0 74px 10px 28px;
+
+    }
 }
 
 
@@ -41,8 +53,10 @@
 
     @media (min-width: $tablet-width) {
         flex-wrap: wrap;
-        height: 650px;
-        margin: 10px 52px 78px 57px;
+        height: 619px;
+        margin: 10px 52px 0px 0px;
+        align-items: flex-start;
+        padding-left: 34px;
     }
 }
 
@@ -59,6 +73,10 @@
 .services__item--second {
     flex-direction: row-reverse;
 
+    @media (min-width: $tablet-width) {
+        margin-top: -15px;
+    }
+
 }
 
 .services__item--big {
@@ -67,6 +85,7 @@
 
     @media (min-width: $tablet-width) {
         margin-top: 23px;
+        margin-left: 73px;
     }
 }
 
@@ -79,9 +98,19 @@
     margin-bottom: 0px;
 }
 
+.services__name--first {
+    @media (min-width: $tablet-width) {
+        margin-left: 85px;
+    }
+}
+
 .services__name--second {
     text-align: right;
     padding-right: 50px;
+
+    @media (min-width: $tablet-width) {
+        padding-right: 174px;
+    }
 }
 
 .services__name::after {
@@ -100,6 +129,10 @@
 
 .services__name--second::after {
     right: 125px;
+
+    @media (min-width: $tablet-width) {
+        right: 253px;
+    }
 }
 
 .services__name--big::after {
@@ -120,12 +153,22 @@
     @media (max-width: $iphone-width) {
         display: none;
     }
+
+    @media (min-width: $tablet-width) {
+        bottom: 8px;
+        right: 249px;
+    }
 }
 
 .services__name--second::before {
     right: -64px;
     transform: rotate(180deg);
 
+    @media (min-width: $tablet-width) {
+        right: -23px;
+        bottom: 1px;
+
+    }
 }
 
 .services__name--big::before {
@@ -149,7 +192,8 @@
     margin-bottom: -253px;
 
     @media (min-width: $tablet-width) {
-        height: 589px;
+        height: 546px;
+        width: 100%;
     }
 }
 
@@ -184,8 +228,12 @@
 @media (min-width: $tablet-width) {
     .services__tittle-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1.3fr;
-        margin-top: 50px;
-        margin-bottom: 100px;
+        grid-template-columns: 1fr 1.5fr;
+        margin-top: 132px;
+        margin-bottom: 166px;
+    }
+
+    .services__discription--first {
+        margin-left: 88px;
     }
 }
