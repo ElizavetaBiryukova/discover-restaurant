@@ -15,6 +15,12 @@
         margin-left: 35px;
 
     }
+
+    @media (min-width: $desktop-width) {
+        height: 78px;
+        margin-left: 115px;
+        width: 583px;
+    }
 }
 
 .search-restaurant__input::placeholder {
@@ -24,6 +30,11 @@
 
     @media (max-width: $iphone-width) {
         font-size: 12px;
+        
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-left: 43px;
     }
 }
 
