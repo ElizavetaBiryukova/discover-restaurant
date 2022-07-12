@@ -46,6 +46,12 @@
     @media (max-width: $iphone-width) {
         display: none;
     }
+
+    @media (min-width: $tablet-width) {
+        top: 127px;
+        left: 826px;
+
+    }
 }
 
 .advance-booking::before {

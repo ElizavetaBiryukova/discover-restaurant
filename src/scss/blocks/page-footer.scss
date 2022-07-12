@@ -92,7 +92,7 @@
     @media (min-width: $tablet-width) {
         width: 60px;
         height: 60px;
-        margin: 16px 12px 0px -49px;
+        margin: 14px 11px 4px -74px;
 
     }
 }
@@ -104,6 +104,11 @@
     width: 20px;
     height: 30px;
     top: 13px;
+
+    @media (min-width: $tablet-width) {
+        top: 23px;
+        right: 5px;
+    }
 }
 
 .page-footer__btn-email::before {
@@ -114,6 +119,11 @@
     height: 1px;
     top: 19px;
     left: 6px;
+
+    @media (min-width: $tablet-width) {
+        top: 29px;
+        width: 35px;
+    }
 }
 
 .page-footer__send-email {
