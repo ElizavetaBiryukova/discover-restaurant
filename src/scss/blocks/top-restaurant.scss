@@ -308,7 +308,7 @@
     margin: 16px 0 27px 48%;
 
     @media (min-width: $tablet-width) {
-        // grid-column-start: 2;
+        grid-column-start: 2;
         margin-top: -310px;
         margin-left: 45%;
     }

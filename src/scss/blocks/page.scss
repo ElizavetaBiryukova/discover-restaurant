@@ -1,14 +1,20 @@
 .page {
-    height: 100%;
-    font-family: $font-family-base;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
-    color: $font-color-base;
-    background-color: $bg-color-blocks
+  height: 100%;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $font-color-base;
+  background-color: $bg-color-blocks
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $bg-color-body;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1920px;
+    margin: auto;
+    box-shadow: 0px 35px 90px rgba(0, 0, 0, 0.25);
   }
-  
-  .page__body {
-    min-height: 100%;
-    margin: 0;
-    background-color: $bg-color-body;
-  }
+}

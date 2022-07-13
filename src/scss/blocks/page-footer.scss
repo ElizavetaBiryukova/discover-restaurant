@@ -35,6 +35,10 @@
     @media (min-width: $tablet-width) {
         margin: 0px 330px 20px 330px;
     }
+
+    @media (min-width: $desktop-width) {
+        margin: 0px 600px 20px 600px;
+    }
 }
 
 .page-footer__title {

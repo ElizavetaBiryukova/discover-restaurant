@@ -150,6 +150,11 @@
     @media (max-width: $iphone-width) {
         display: none;
     }
+
+    @media (min-width: $desktop-width) {
+        bottom: 16px;
+    }
+
 }
 
 .services__name--second::after {
@@ -157,6 +162,12 @@
 
     @media (min-width: $tablet-width) {
         right: 253px;
+    }
+
+    @media (min-width: $desktop-width) {
+        right: 406px;
+        bottom: 13px;
+        height: 2px;
     }
 }
 
@@ -183,6 +194,14 @@
         bottom: 8px;
         right: 249px;
     }
+
+    @media (min-width: $desktop-width) {
+        width: 182px;
+        background-image: url(../../img/arrow-desktop.svg);
+        right: 205px;
+        transform: rotate(180deg);
+        background-position: 181px;
+    }
 }
 
 .services__name--second::before {
@@ -193,6 +212,13 @@
         right: -23px;
         bottom: 1px;
 
+    }
+
+    @media (min-width: $desktop-width) {
+        bottom: 6px;
+        width: 260px;
+        transform: none;
+        background-position: 259px;
     }
 }
 
