@@ -12,7 +12,7 @@
     @media (min-width: $desktop-width) {
         display: grid;
         grid-template-columns: 32fr 1fr;
-        margin-left: 138px;
+        margin-left: 162px;
     }
 }
 
@@ -50,11 +50,10 @@
     .main-nav__list {
         font-size: 16px;
         display: flex;
-        letter-spacing: -1px;
     }
 
     .main-nav__item {
-        margin-right: 14px;
+        margin-right: -2px;
     }
 
     .main-nav__icon {
@@ -103,7 +102,7 @@
     }
 
     .main-nav__link {
-        margin-right: 23px;
+        margin-right: 50px;
     }
 
     .main-nav__user {

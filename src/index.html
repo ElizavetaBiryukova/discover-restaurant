@@ -141,9 +141,12 @@
       <div class="search-restaurant__images">
         <div class="search-restaurant__picture">
           <picture>
+            <source media="(min-width: 1655px)" srcset="img/lettuce-desktop1.png 1x, img/lettuce-desktop1@2x.png 2x">
             <img class="search-restaurant__lettuce" alt="Изображение блюда" src="img/lettuce-mobile.png"
               srcset="img/lettuce-mobile@2x.png 2x">
-              <source media="(min-width: 1164px)" srcset="img/delishes-desktop.png 1x, img/delishes-desktop@2x.png 2x">
+          </picture>
+          <picture>
+            <source media="(min-width: 1655px)" srcset="img/delishes-desktop.png 1x, img/delishes-desktop@2x.png 2x">
             <source media="(min-width: 1194px)" srcset="img/delishes-tablet.png 1x, img/delishes-tablet@2x.png 2x">
             <img class="search-restaurant__delishes" alt="Изображение блюда" src="img/delishes-mobile.png"
               srcset="img/delishes-mobile@2x.png 2x">
@@ -179,6 +182,8 @@
             <div class="top-restaurant__img-wrapper">
               <a href="#">
                 <picture>
+                  <source media="(min-width: 1655px)"
+                    srcset="img/fire-water-desktop.png 1x, img/fire-water-desktop@2x.png 2x">
                   <img class="top-restaurant__img" src="img/fire-water.png" alt="Restaurant Fire Water"
                     srcset="img/fire-water@2x.png 2x">
                 </picture>
@@ -201,8 +206,12 @@
           <li class="top-restaurant__item">
             <div class="top-restaurant__img-wrapper">
               <a href="#">
-                <img class="top-restaurant__img" src="img/thewonton.png" alt="Restaurant The Wonton"
-                  srcset="img/thewonton@2x.png 2x">
+                <picture>
+                  <source media="(min-width: 1655px)"
+                    srcset="img/thewonton-desktop.png 1x, img/thewonton-desktop@2x.png 2x">
+                  <img class="top-restaurant__img" src="img/thewonton.png" alt="Restaurant The Wonton"
+                    srcset="img/thewonton@2x.png 2x">
+                </picture>
               </a>
             </div>
             <div class="top-restaurant__popup">
@@ -271,7 +280,8 @@
           </div>
           <div class="services__name-wrapper">
             <h3 class="services__name services__name--first">Advanced table<br> booking</h3>
-            <p class="services__discription services__discription--first">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+            <p class="services__discription services__discription--first">Lorem ipsum dolor sit amet,<br> consectetur
+              adipiscing elit.</p>
           </div>
         </li>
         <li class="services__item services__item--second">

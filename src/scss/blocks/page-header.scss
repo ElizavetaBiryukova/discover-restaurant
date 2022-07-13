@@ -11,7 +11,7 @@
 
     @media (min-width: $desktop-width) {
         justify-content: flex-start;
-        padding: 40px 109px 0px 118px;
+        padding: 51px 109px 0px 133px;
         background: linear-gradient(to right,
                 $light-beige 73%, $red 25%);
 
@@ -31,5 +31,6 @@
 
     @media (min-width: $desktop-width) {
         padding-top: 11px;
+        font-size: 72px;
     }
 }

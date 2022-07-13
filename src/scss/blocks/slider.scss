@@ -12,7 +12,8 @@
     @media (min-width: $desktop-width) {
         background: linear-gradient(to right,
                 $light-beige 73%, $red 25%);
-        padding-top: 195px;
+        padding-top: 231px;
+        padding-bottom: 86px;
     }
 }
 
@@ -28,8 +29,8 @@
     }
 
     @media (min-width: $desktop-width) {
-        font-size: 177px;
-        margin-left: 99px;
+        font-size: 200px;
+        margin-left: 125px;
     }
 }
 
@@ -48,9 +49,9 @@
     }
 
     @media (min-width: $desktop-width) {
-        font-size: 62px;
-        line-height: 75px;
+        font-size: 72px;
+        line-height: 90px;
         width: 41%;
-        margin: 45px 0px 30px 115px;
+        margin: 54px 0px 30px 131px;
     }
 }

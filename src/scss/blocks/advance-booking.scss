@@ -12,6 +12,10 @@
         padding: 200px 222px 121px 10px;
 
     }
+
+    @media (min-width: $desktop-width) {
+        padding: 270px 413px 266px 182px;
+    }
 }
 
 .advance-booking__wrapper {
@@ -28,6 +32,10 @@
     @media (min-width: $tablet-width) {
         padding: 91px 0px 26px 224px;
 
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 148px 0px 108px 233px;
     }
 
 }
@@ -52,6 +60,11 @@
         left: 826px;
 
     }
+
+    @media (min-width: $desktop-width) {
+        top: 195px;
+        left: 1288px;
+    }
 }
 
 .advance-booking::before {
@@ -64,6 +77,11 @@
     top: 418px;
     left: 52px;
     z-index: -1;
+
+    @media (min-width: $desktop-width) {
+        top: 837px;
+        left: 413px;
+    }
 }
 
 .advance-booking__title {
@@ -76,6 +94,10 @@
     @media (min-width: $tablet-width) {
         font-size: 36px;
         margin-bottom: 64px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 60px;
     }
 }
 
@@ -112,6 +134,11 @@
         margin-left: -166px;
         font-size: 30px;
         padding: 14px 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 14px 40px;
+
     }
 }
 
