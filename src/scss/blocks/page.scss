@@ -11,6 +11,7 @@
   min-height: 100%;
   margin: 0;
   background-color: $bg-color-body;
+  margin: auto;
 
   @media (min-width: $desktop-width) {
     max-width: 1920px;

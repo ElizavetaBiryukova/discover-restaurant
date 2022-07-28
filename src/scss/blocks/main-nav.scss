@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    cursor: pointer;
 
     @media (min-width: $desktop-width) {
         display: none;
@@ -32,6 +33,8 @@
     height: 3.12px;
     background-color: $white;
     margin: 4px 0;
+    z-index: 12;
+
 
     @media (min-width: $tablet-width) {
         width: 40px;
@@ -45,6 +48,52 @@
         width: 27.5px;
     }
 }
+
+.main-nav__toggle--active {
+    margin-top: 18px;
+}
+
+.main-nav__toggle--active .main-nav_bar--3 {
+    opacity: 0;
+}
+
+.main-nav__toggle--active .main-nav_bar--1 {
+    transform: translateY(-50%) rotate(45deg);
+    margin: -1px 0px;
+    background-color: $red;
+}
+
+.main-nav__toggle--active .main-nav_bar--2 {
+    transform: translateY(-50%) rotate(-45deg);
+    margin: -1px 0px;
+    background-color: $red;
+}
+
+.main-nav--open .main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    padding: 46px 30px;
+    font-size: 34px;
+    font-weight: 600;
+    background-color: $light-beige;
+}
+
+.main-nav--open .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.main-nav--open .main-nav__login {
+    display: none;
+}
+
 
 @media (min-width: $desktop-width) {
     .main-nav__list {
@@ -90,7 +139,7 @@
         border-radius: 50%;
         position: absolute;
         left: 7px;
-    bottom: -8px;
+        bottom: -8px;
 
     }
 
@@ -108,7 +157,7 @@
     .main-nav__user {
         font-size: 16px;
         color: $white;
-        
+
 
     }
 }
