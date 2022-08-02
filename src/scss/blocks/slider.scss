@@ -257,6 +257,7 @@
     height: 30px;
     margin-bottom: 20px;
     transform: rotate(180deg);
+    cursor: pointer;
     @media (min-width: $iphone-width) {
         margin-left: 20px;
     }

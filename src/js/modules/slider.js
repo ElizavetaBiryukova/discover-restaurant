@@ -1,11 +1,10 @@
-// const sliderImages = document.querySelector('.slider__images');
-// const btnControl = document.querySelector('.slider__btn-control');
 const sliderPictures = document.querySelectorAll('.slider__picture');
 const btnNext = document.querySelector('.slider__btn-control--next');
 const btnBack = document.querySelector('.slider__btn-control--back');
 
 let index = 0;
 
+console.log(sliderPictures);
 const activeSlide = n => {
     sliderPictures.forEach(element => {
         element.classList.remove('slider__picture--active');
@@ -19,7 +18,20 @@ const nextSlide = () => {
         activeSlide(index);
     } else {
         index++;
+        activeSlide(index);
     }
 };
 
 btnNext.addEventListener('click', nextSlide);
+
+const backSlide = () => {
+    if (index == 0) {
+        index = sliderPictures.length - 1;
+        activeSlide(index);
+    } else {
+        index--;
+        activeSlide(index);
+    }
+};
+
+btnBack.addEventListener('click', backSlide);
