@@ -55,3 +55,222 @@
         margin: 54px 0px 30px 131px;
     }
 }
+
+.slider__input {
+    height: 90px;
+    margin: -10px -158px 7px 22px;
+    box-sizing: border-box;
+    border: none;
+    width: 462px;
+
+    @media (max-width: $iphone-width) {
+        width: 70%;
+        height: 62px;
+        margin: -10px -47px 7px 3px;
+    }
+
+    @media (min-width: $tablet-width) {
+        margin-left: 35px;
+
+    }
+
+    @media (min-width: $desktop-width) {
+        height: 78px;
+        margin-left: 115px;
+        width: 516px;
+        margin: 5px -47px 7px 130px;
+    }
+}
+
+.slider__input::placeholder {
+    padding-left: 27px;
+    font-size: 18px;
+    line-height: 90px;
+
+    @media (max-width: $iphone-width) {
+        font-size: 12px;
+
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-left: 43px;
+    }
+}
+
+.slider__search-line {
+    display: flex;
+    align-items: center;
+}
+
+.slider__button {
+    background-color: $red;
+    font-size: 30px;
+    line-height: 76px;
+    font-weight: 600;
+    color: $white;
+    box-sizing: border-box;
+    border: 1px solid $red;
+    width: 146px;
+    height: 73px;
+    border-radius: 60px 0 0 0;
+    margin-bottom: 15px;
+
+    @media (max-width: $iphone-width) {
+        border-radius: 0px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 39px;
+        padding: 5px 0px 10px 0px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 192px;
+        height: 76px;
+        margin-bottom: 5px;
+    }
+}
+
+.slider__location {
+    background-color: $red;
+    font-size: 30px;
+    line-height: 65px;
+    font-weight: 500;
+    color: $white;
+    box-sizing: border-box;
+    border: 2px solid $red;
+    width: 280px;
+    height: 65px;
+    border-radius: 0 100px 100px 0;
+    padding-left: 30px;
+    margin-top: 39px;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 89px;
+    }
+
+
+    @media (min-width: $desktop-width) {
+        margin-top: 175px;
+        padding-left: 46px;
+    }
+
+}
+
+.slider__vector {
+    padding-right: 24px;
+
+    @media (min-width: $desktop-width) {
+        padding-right: 9px;
+    }
+}
+
+.slider__delishes {
+    margin-left: 9px;
+    margin-top: -376px;
+
+    @media (max-width: $iphone-width) {
+        margin-left: -213px;
+        margin-top: -376px;
+    }
+
+    @media (min-width: $tablet-width) {
+        margin-left: 0px;
+        margin-top: -345px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: 0px;
+        margin-top: -657px;
+    }
+}
+
+.slider__lettuce {
+    margin-left: 223px;
+    margin-top: -103px;
+
+    @media (max-width: $iphone-width) {
+        margin-left: -15px;
+    }
+
+    @media (min-width: $tablet-width) {
+        margin-left: 114px;
+        margin-top: -195px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: 213px;
+        margin-top: -391px;
+    }
+}
+
+.slider__picture {
+    display: none;
+}
+
+.slider__picture--active {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.slider__images {
+    width: 65%;
+    background-image: radial-gradient($light-gray 20%, $light-beige 20%);
+    background-position: 0 8px;
+    background-size: 29px 28px;
+    margin-left: 29px;
+
+    @media (min-width: $tablet-width) {
+        width: 19%;
+        margin-left: 627px;
+        margin-top: -565px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: 890px;
+    }
+}
+
+.slider__control {
+    margin-left: 80%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    @media (min-width: $iphone-width) {
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+}
+
+.slider__btn-control {
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    background-image: url(../../img/carousel.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 44px;
+    height: 30px;
+    margin-bottom: 20px;
+    transform: rotate(180deg);
+    @media (min-width: $iphone-width) {
+        margin-left: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+        margin-left: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: 120px;
+    }
+
+}
+
+.slider__btn-control--back {
+    transform: none;
+}
