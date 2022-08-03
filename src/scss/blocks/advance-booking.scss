@@ -128,7 +128,7 @@
     border-style: none;
     padding: 7px 22px;
     margin-top: 7px;
-    margin-left: -73px;
+    margin-left: -90px;
 
     @media (min-width: $tablet-width) {
         margin-left: -166px;
@@ -140,6 +140,10 @@
         padding: 14px 40px;
 
     }
+}
+
+.advance-booking__button:hover {
+    box-shadow: 0px 0px 15px #fe043c;
 }
 
 .advance-booking__element {
@@ -160,17 +164,21 @@
     box-shadow: 0 0 30px $beige;
     height: 51px;
     width: 273px;
+    color: $blue;
+    padding-left: 30px;
+    padding-top: 10px;
 
     @media (min-width: $tablet-width) {
         width: 554px;
         height: 90px;
+        font-size: 20px;
     }
 }
 
-.advance-booking__search-input::placeholder {
-    color: $blue;
-    padding-left: 30px;
-    padding-top: 10px;
+.advance-booking__search-input:focus,
+.advance-booking__search-input:hover,
+.advance-booking__search-input:active {
+    outline: 4px solid $red;
 }
 
 .advance-booking__element-wrapper {

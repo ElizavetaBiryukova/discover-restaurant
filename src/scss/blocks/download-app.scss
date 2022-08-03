@@ -153,6 +153,11 @@
     }
 }
 
+.download-app__wrapper-btn:focus,
+.download-app__wrapper-btn:hover {
+    background-color: rgba(0, 0, 0, 0.695);
+}
+
 .download-app__wrapper-btn--apply {
     background-image: url(../../img/apple.svg);
 }
@@ -162,7 +167,7 @@
 }
 
 .download-app__button-text {
-    font-size: 12px;
+    font-size: 11px;
     margin: 0;
 
     @media (max-width: $iphone-width) {

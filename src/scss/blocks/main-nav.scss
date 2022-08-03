@@ -29,6 +29,11 @@
 
 }
 
+.main-nav__toggle:focus,
+.main-nav__toggle:hover {
+    opacity: 0.6;
+}
+
 .main-nav_bar {
     width: 20.54px;
     height: 3.12px;

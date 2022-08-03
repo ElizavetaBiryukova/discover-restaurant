@@ -70,6 +70,11 @@
     }
 }
 
+.menu__item:focus,
+.menu__item:hover {
+    opacity: 0.8;
+}
+
 .menu__popup {
     background-color: $white;
     margin-top: -32px;
@@ -77,6 +82,11 @@
     border: 1px solid $white;
     box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5);
     border-radius: 0px 0px 25px 25px;
+}
+
+.menu__popup:focus,
+.menu__popup:hover {
+    box-shadow: 0px 0px 20px $gray;
 }
 
 .menu__popup-wrapper {
@@ -94,6 +104,11 @@
     margin-left: 10px;
     font-weight: 500;
     margin-bottom: 0px;
+}
+
+.menu__popup-title:focus,
+.menu__popup-title:hover {
+    color: $red;
 }
 
 .menu__price {

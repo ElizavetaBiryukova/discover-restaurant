@@ -20,3 +20,8 @@
         margin: 10px;
     }
 }
+
+.additions__item:focus,
+.additions__item:hover {
+   color: $red;
+}

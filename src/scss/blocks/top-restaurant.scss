@@ -183,6 +183,11 @@
     }
 }
 
+.top-restaurant__popup-title:focus,
+.top-restaurant__popup-title:hover {
+    opacity: 0.6;
+}
+
 .top-restaurant__link {
     text-decoration: none;
 }
@@ -247,6 +252,11 @@
 
 }
 
+.top-restaurant__button:focus,
+.top-restaurant__button:hover {
+    opacity: 0.6;
+}
+
 .top-restaurant__popup-wrapper {
     display: flex;
     flex-direction: column;
@@ -270,6 +280,7 @@
     height: 40px;
     border-radius: 50%;
     margin-left: 49%;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
         margin-top: 259px;
@@ -280,6 +291,11 @@
         margin-top: 395px;
         margin-left: -61px;
     }
+}
+
+.top-restaurant__see-more:focus,
+.top-restaurant__see-more:hover {
+    opacity: 0.6;
 }
 
 .top-restaurant__see-more::after {
@@ -306,6 +322,7 @@
     text-transform: capitalize;
     color: $red;
     margin: 16px 0 27px 48%;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
         grid-column-start: 2;
@@ -317,6 +334,11 @@
         margin-top: -378px;
         margin-left: -74px;
     }
+}
+
+.top-restaurant__see-more-text:focus,
+.top-restaurant__see-more-text:hover {
+    opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {
@@ -342,7 +364,7 @@
         position: absolute;
         content: "";
         background-image: url(../../img/vector.svg);
-        background-repeat:no-repeat;
+        background-repeat: no-repeat;
         width: 25px;
         height: 30px;
         top: -3px;
