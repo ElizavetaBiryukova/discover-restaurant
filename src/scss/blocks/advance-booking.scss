@@ -214,6 +214,11 @@
     margin-top: 55px;
     display: grid;
     grid-template-columns: repeat(3, 100px);
+    // grid-gap: 20px;
+
+    // @media (min-width: $iphone-width) {
+    //     grid-gap:none;
+    // }
 
     @media (min-width: $tablet-width) {
         font-size: 16px;
@@ -238,5 +243,14 @@
 }
 
 .advance-booking__input--guest {
-    width: 70px;
+    width: 90px;
 }
+
+
+    .advance-booking__input--date {
+        width: 100px;
+
+        @media (min-width: $tablet-width) {
+            width: 150px;
+        }
+    }
