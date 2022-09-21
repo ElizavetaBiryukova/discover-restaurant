@@ -4,7 +4,6 @@ const btnBack = document.querySelector('.slider__btn-control--back');
 
 let index = 0;
 
-console.log(sliderPictures);
 const activeSlide = n => {
     sliderPictures.forEach(element => {
         element.classList.remove('slider__picture--active');
