@@ -1,12 +1,12 @@
 .page-footer {
-    background-image: url(../../img/letucce5.png);
+    background-image: url(../img/letucce5.png);
     background-repeat: no-repeat;
     background-position: 0px -51px;
     position: relative;
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-        background-image: url(../../img/letucce5-tablet.png);
+        background-image: url(../img/letucce5-tablet.png);
         background-position: 2px -24px;
     }
 }
@@ -111,7 +111,7 @@
 .page-footer__btn-email::after {
     position: absolute;
     content: "";
-    background: url(../../img/chevron.svg) no-repeat;
+    background: url(../img/chevron.svg) no-repeat;
     width: 20px;
     height: 30px;
     top: 13px;

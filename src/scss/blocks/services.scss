@@ -181,7 +181,7 @@
     content: "";
     width: 73px;
     height: 16px;
-    background-image: url(../../img/arrow.svg);
+    background-image: url(../img/arrow.svg);
     position: absolute;
     bottom: 6px;
     right: 202px;
@@ -197,7 +197,7 @@
 
     @media (min-width: $desktop-width) {
         width: 182px;
-        background-image: url(../../img/arrow-desktop.svg);
+        background-image: url(../img/arrow-desktop.svg);
         right: 205px;
         transform: rotate(180deg);
         background-position: 181px;

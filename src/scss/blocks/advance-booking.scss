@@ -29,19 +29,19 @@
     top: 0px;
     left: 0px;
     z-index: -1;
-    background: left / contain no-repeat url('../../img/lettuce-parallax-mobile.png') fixed,
-        $beige right url('../../img/lettuce2-parallax-mobile.png') no-repeat fixed;
+    background: left / contain no-repeat url('../img/lettuce-parallax-mobile.png') fixed,
+        $beige right url('../img/lettuce2-parallax-mobile.png') no-repeat fixed;
 
     @media (max-width: $iphone-width) {
-        background: left / contain no-repeat url('../../img/lettuce-parallax-mobile.png') fixed,
-            $beige right url('../../img/lettuce2-parallax-mobile.png') no-repeat fixed;
+        background: left / contain no-repeat url('../img/lettuce-parallax-mobile.png') fixed,
+            $beige right url('../img/lettuce2-parallax-mobile.png') no-repeat fixed;
     }
 
     @media (min-width: $tablet-width) {}
 
     @media (min-width: $desktop-width) {
-        background: left / contain no-repeat url('../../img/lettuce-parallax-desktop.png') fixed,
-            $beige right url('../../img/lettuce2-parallax-desktop.png') no-repeat fixed;
+        background: left / contain no-repeat url('../img/lettuce-parallax-desktop.png') fixed,
+            $beige right url('../img/lettuce2-parallax-desktop.png') no-repeat fixed;
     }
 }
 
