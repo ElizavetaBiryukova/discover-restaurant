@@ -5,6 +5,7 @@
   "description": "Личный проект по поиску рестаранов\r Категория: Landing Page\r Интерактивные элементы:\r   Валидация  Слайдер  Parallax\r Описание и небольшое ТЗ",
   "main": "gupfile.js",
   "type": "module",
+  "homepage": "https://elizavetabiryukova.github.io/discover-restaurant/",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "dev": "gulp",
